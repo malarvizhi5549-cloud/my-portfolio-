@@ -1,0 +1,12 @@
+# Chrome profiles and browser cache
+**/chrome_profile/
+chrome_profile/
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+desktop.ini
+.DS_Store
+
+# Temporary logs
+*.log
