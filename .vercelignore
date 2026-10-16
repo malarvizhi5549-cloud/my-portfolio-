@@ -1,0 +1,19 @@
+# Git files
+.git/
+.gitignore
+
+# Zip archive & backups
+nudge-folio.zip
+*.zip
+*.bak
+*.orig
+delete photo.png
+
+# Scripts & temporary dev tools
+scripts/
+
+# OS metadata
+Thumbs.db
+Desktop.ini
+desktop.ini
+.DS_Store

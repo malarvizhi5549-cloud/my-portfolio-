@@ -10,3 +10,6 @@ desktop.ini
 
 # Temporary logs
 *.log
+
+# Vercel build output
+.vercel

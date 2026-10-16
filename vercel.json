@@ -1,0 +1,58 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/eclore", "destination": "/case-study/eclore" },
+    { "source": "/stylebook", "destination": "/case-study/stylebook" },
+    { "source": "/homestead", "destination": "/case-study/homestead" },
+    { "source": "/north-light", "destination": "/case-study/north-light" },
+    { "source": "/clo-3d", "destination": "/case-study/stylebook" },
+    { "source": "/case-study/clo-3d", "destination": "/case-study/stylebook" },
+    { "source": "/project-1", "destination": "/case-study/eclore" },
+    { "source": "/project-2", "destination": "/case-study/stylebook" },
+    { "source": "/project-3", "destination": "/case-study/homestead" },
+    { "source": "/project-4", "destination": "/case-study/north-light" },
+    { "source": "/project1", "destination": "/case-study/eclore" },
+    { "source": "/project2", "destination": "/case-study/stylebook" },
+    { "source": "/project3", "destination": "/case-study/homestead" },
+    { "source": "/project4", "destination": "/case-study/north-light" },
+    { "source": "/case-study/project-1", "destination": "/case-study/eclore" },
+    { "source": "/case-study/project-2", "destination": "/case-study/stylebook" },
+    { "source": "/case-study/project1", "destination": "/case-study/eclore" },
+    { "source": "/case-study/project2", "destination": "/case-study/stylebook" },
+    { "source": "/case-study/project-3", "destination": "/case-study/homestead" },
+    { "source": "/case-study/project-4", "destination": "/case-study/north-light" },
+    { "source": "/case-study/project3", "destination": "/case-study/homestead" },
+    { "source": "/case-study/project4", "destination": "/case-study/north-light" },
+    { "source": "/ideas-need-silence", "destination": "/blog/ideas-need-silence" },
+    { "source": "/geometry-builds-trust", "destination": "/blog/geometry-builds-trust" },
+    { "source": "/everyday-beauty", "destination": "/blog/everyday-beauty" },
+    { "source": "/the-power-of-focus", "destination": "/blog/the-power-of-focus" },
+    { "source": "/a-greener-workspace", "destination": "/blog/a-greener-workspace" },
+    { "source": "/the-creative-desk", "destination": "/blog/the-creative-desk" },
+    { "source": "/materials-and-memory", "destination": "/blog/materials-and-memory" },
+    { "source": "/beyond-the-screen", "destination": "/blog/beyond-the-screen" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
+      ]
+    }
+  ]
+}
